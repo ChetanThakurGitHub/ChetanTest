@@ -1,6 +1,5 @@
 import android.util.Log
 import com.emedinaa.kotlinmvvm.data.ApiClient
-import com.emedinaa.kotlinmvvm.data.RecipeResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
