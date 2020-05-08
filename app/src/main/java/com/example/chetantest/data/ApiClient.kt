@@ -1,5 +1,6 @@
 package com.emedinaa.kotlinmvvm.data
 
+import RecipeResponse
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Call
@@ -9,7 +10,6 @@ import retrofit2.http.GET
 
 object ApiClient {
 
-    //private val API_BASE_URL = "https://obscure-earth-55790.herokuapp.com"
     private val API_BASE_URL = "http://www.recipepuppy.com"
     private var servicesApiInterface:ServicesApiInterface?=null
 
