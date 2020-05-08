@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/recipe_details"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/ivBcak"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:padding="18dp"
+        android:rotation="180"
+        android:src="@drawable/ic_right_arrow" />
+
+    <ImageView
+        android:id="@+id/ivThumb"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@+id/tvHeader"
+        android:scaleType="centerCrop"
+        android:src="@drawable/place_holder" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvIngredients"
+        android:background="#80000000">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tvIngredients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivThumb"
+        android:padding="20dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvIngredients"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:drawableEnd="@drawable/ic_right_arrow"
+        android:drawablePadding="5dp"
+        android:drawableTint="@color/white"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/read_more"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ChetanTest</string>
+    <string name="empty_list">No museums found!</string>
+    <string name="an_error_occurred">An error occurred</string>
+    <string name="recipes">Recipes</string>
+    <string name="recipe_details">Recipe Details</string>
+    <string name="read_more">Read More</string>
+</resources>
